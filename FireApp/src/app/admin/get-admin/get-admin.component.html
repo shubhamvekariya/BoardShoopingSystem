@@ -1,0 +1,40 @@
+<app-admin-header></app-admin-header>
+<div style="padding-left:16px">
+    <h2></h2>
+    </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  
+  <br><div class="container">
+    <h2>ADMIN DETAILS</h2><br>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>AdminID</th>
+          <th>AdminName</th>
+          <th>Password</th>
+          <th class="ml-3">Option</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let admin of adminlist">
+          <td>{{ admin._id }}</td>
+          <td>{{ admin.AdminID }}</td>
+          <td>{{ admin.Password }}</td>
+          <td><button class="btn btn-default" style="background-color:black ;color: white;" (click)="EditAdmin(admin._id)">EDIT</button></td>
+        </tr>
+  
+      </tbody>
+    </table>
+  </div>

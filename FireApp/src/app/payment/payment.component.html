@@ -1,0 +1,61 @@
+<app-header></app-header>
+
+<main class="main my-5 py-5">
+		<div class="content">
+						<div class="sap_tabs">
+							<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+								<div class="resp-tabs-container">
+                                        <div class="payment-info">
+                                                <h3>Personal Information{{ detail }}</h3>
+                                                <form [formGroup]="DetailForm" (ngSubmit)="addPayment(email.value,fname.value,nameoncard.value,cardno.value,month.value+'/'+year.value)" class="c-form">
+                                                    <div class="tab-for">				
+                                                        <h5>EMAIL ADDRESS</h5>
+                                                            <input type="text" formControlName="email" #email value="">
+                                                        <h5>FIRST NAME</h5>													
+                                                            <input type="text" formControlName="fname" #fname value="">
+                                                    </div>			
+                                                <h3 class="pay-title">Credit Card Info</h3>
+                                                    <div class="tab-for">				
+                                                        <h5>NAME ON CARD</h5>
+                                                            <input type="text" formControlName="nameoncard" #nameoncard value="">
+                                                        <h5>CARD NUMBER</h5>													
+                                                            <input class="pay-logo" type="text" formControlName="cardno" #cardno value="0000-0000-0000-0000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '0000-0000-0000-0000';}" required="">
+                                                    </div>	
+                                                    <div class="transaction">
+                                                        <div class="tab-form-left user-form">
+                                                            <h5>EXPIRATION</h5>
+                                                                <ul>
+                                                                    <li>
+                                                                        <input type="number" class="text_box" formControlName="month" #month value="6" min="1" />	
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="number" class="text_box" formControlName="year" #year  value="1988" min="1" />	
+                                                                    </li>
+                                                                    
+                                                                </ul>
+                                                        </div>
+                                                        <div class="tab-form-right user-form-rt">
+                                                            <h5>CVV NUMBER</h5>													
+                                                            <input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
+                                                        </div>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    <div class="single-bottom">
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox"  id="brand" value="">
+                                                                <label for="brand"><span></span>By checking this box, I agree to the Terms & Conditions & Privacy Policy.</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button type="submit"  style="margin: 10% 40% 5%;" class="c-submit2">SUBMIT </button>
+                                                </form>
+                                            </div>
+								</div>	
+							</div>
+						</div>	
+
+		</div>
+    </main>
+    
+<app-footer></app-footer>

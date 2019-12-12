@@ -1,0 +1,61 @@
+<app-header></app-header>
+
+<div>
+		<img src="assets/Images/ContactUs/contactus-background.jpg" alt="product-image">
+		<div class="c1-text">
+			<h2 class="c1-h2-text">Shipping Details</h2>
+		</div>  
+	</div>
+  <main class="container-fluid">
+		<form [formGroup]="DetailForm" (ngSubmit)="addDetail(email.value,fname.value,lname.value,pnumber.value,flatno.value+','+colony.value+','+landmark.value+','+city.value+','+state.value+'-'+zipcode.value)" class="c-form">
+			<h1 style="opacity:0.8;">Contact Detail</h1>
+			<br>
+			<label class="c-label " >Your email address</label>
+			<br>
+			<input type="email" class="c-input" formControlName="email" #email required>
+			<p style="font-size:14px;opacity:0.8;"><input type="checkbox" name="update"> Keep me up to date on news and exclusive offers by email and/or text messages*</p>
+			<label class="c-label pt-3" >First Name</label>
+			<br>
+			<input type="text" class="c-input" formControlName="fname" #fname required>
+			<br>
+			<label class="c-label pt-3">Last Name</label>
+			<br>
+			<input type="text" class="c-input" formControlName="lname" #lname required>
+			<br>
+			<label class="c-label pt-3" >Your phone number</label>
+			<br>
+			<input type="text" class="c-input" formControlName="pnumber" #pnumber required>
+			<br>
+			<hr class="mt-5">
+			<h1 style="opacity:0.8;">Address Detail</h1>
+			<br>
+			<label class="c-label pt-3" >Flat / House No. / Floor / Building</label>
+			<br>
+			<input type="text" class="c-input" formControlName="flatno" #flatno required>
+			<br>
+			<label class="c-label pt-3" >Colony / Street / Locality</label>
+			<br>
+			<input type="text" class="c-input" formControlName="colony" #colony required>
+			<br>
+			<label class="c-label pt-3" >Landmark</label>
+			<br>
+			<input type="text" class="c-input" formControlName="landmark" #landmark required>
+			<br>
+			<label class="c-label pt-3" >City</label>
+			<br>
+			<input type="text" class="c-input" formControlName="city" #city required>
+			<br>
+			<label class="c-label pt-3" >State</label>
+			<br>
+			<input type="text" class="c-input" formControlName="state" #state required>
+			<br>
+			<label class="c-label pt-3" >Zip (Postal) Code</label>
+			<br>
+			<input type="text" class="c-input" formControlName="zipcode" #zipcode required>
+			<br>
+			<hr class="mt-5">
+			<button type="submit"  class="c-submit2">Proceed to Buy</button>
+			</form>
+  </main>
+  
+<app-footer></app-footer>

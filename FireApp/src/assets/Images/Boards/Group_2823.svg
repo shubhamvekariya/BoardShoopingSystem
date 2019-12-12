@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.369 55.158">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e3e3e3;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_2823" data-name="Group 2823" transform="translate(-251 -179)">
+    <path id="Path_1270" data-name="Path 1270" class="cls-1" d="M0,0H48.369V55.158s-23.152-12.992-24.059-13.9S0,55.158,0,55.158Z" transform="translate(251 179)"/>
+    <g id="noun_Trophy_1624515" transform="translate(257.582 183.679)">
+      <g id="Group_2822" data-name="Group 2822" transform="translate(8 5.4)">
+        <path id="Path_1271" data-name="Path 1271" class="cls-2" d="M26.836,9.294A3.911,3.911,0,0,0,22.941,5.4H11.894a3.894,3.894,0,0,0-.764,7.713,6.273,6.273,0,0,0,5.524,5.956V22.48h-2.8a.764.764,0,1,0,0,1.527h7.127a.764.764,0,1,0,0-1.527h-2.8V19.094a6.273,6.273,0,0,0,5.524-5.956A3.953,3.953,0,0,0,26.836,9.294Zm-17.309,0a2.34,2.34,0,0,1,1.6-2.24v4.48A2.364,2.364,0,0,1,9.527,9.294Zm12.651,3.538a4.76,4.76,0,0,1-9.52,0V6.927h9.52Zm1.527-1.3V7.055a2.366,2.366,0,0,1,0,4.48Z" transform="translate(-8 -5.4)"/>
+        <path id="Path_1272" data-name="Path 1272" class="cls-2" d="M32.356,80.1H21.564a.764.764,0,1,0,0,1.527H32.331a.764.764,0,0,0,.025-1.527Z" transform="translate(-17.542 -61.086)"/>
+      </g>
+    </g>
+  </g>
+</svg>

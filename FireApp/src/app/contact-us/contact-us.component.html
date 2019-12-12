@@ -1,0 +1,39 @@
+<div>
+    <img src="assets/Images/ContactUs/contactus-background.jpg" alt="product-image">
+    <div class="c1-text">
+        <h2 class="c1-h2-text">Contact Customer Support</h2>
+    </div>  
+</div>
+<main class="container-fluid">
+    <form [formGroup]="DetailForm" (ngSubmit)="addIssue(email.value,subject.value,issue.value,fname.value,pnumber.value,orderno.value)" class="c-form">
+        <h1 style="opacity:0.8;">Contact Us</h1>
+        <br>
+        <label class="c-label " >Your email address</label>
+        <br>
+        <input type="enail" class="c-input" name="email" formControlName="email" #email required>
+        <br>
+        <label class="c-label pt-3" >Subject</label>
+        <br>
+        <input type="text" class="c-input" name="subject" formControlName="subject" #subject  required>
+        <br>
+        <label class="c-label pt-3">Description</label>
+        <br>
+        <textarea class="c-input" name="description" formControlName="issue" #issue required></textarea>
+        <p style="font-size:14px;opacity:0.8;">Please enter the details of your request. A member of our support staff will respond as soon as possible.</p>
+        <label class="c-label pt-3" >Your Full Name</label>
+        <br>
+        <input type="text" class="c-input" name="fname" formControlName="fname" #fname required>
+        <br>
+        <label class="c-label pt-3" >Your phone number</label>
+        <br>
+        <input type="number" class="c-input" name="pnumber"  formControlName="pnumber" #pnumber required>
+        <br>
+        <label class="c-label pt-3" >Order Number</label>
+        <br>
+        <input type="text" class="c-input" name="onumber" formControlName="orderno" #orderno required>
+        <p style="font-size:14px;opacity:0.8;">Your order number can be found on your confirmation email.</p>
+        <button type="submit"  class="c-submit2">Submit</button>
+        </form>
+</main>
+
+<app-footer></app-footer>

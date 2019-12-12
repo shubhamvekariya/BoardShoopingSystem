@@ -1,0 +1,13 @@
+main{
+    text-align: justify;
+    }
+    li > a:link
+    {
+    color:red;
+    text-decoration:none;
+    }
+    li > a:visited
+    {
+    color:blue;
+    text-decoration:none;
+    }

@@ -1,0 +1,51 @@
+<app-admin-header></app-admin-header>
+<div style="padding-left:16px">
+    <h2></h2>
+    </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  
+  <br>
+  
+    <div class="container my-5">
+        <form [formGroup]="AccessoryForm" (ngSubmit)="editAccessory(AccessoryName.value,Description1.value,Description2.value,Description3.value,Description4.value,Description5.value,Price.value,ShippingTime.value)">
+        <h2>EDIT ACCESSORY INFORMATION</h2>
+        
+        <hr>
+    
+        <label><b>Accessory Name :</b></label>
+        <input type="text" name="accessoryname" value="{{ accessory.AccessoryName }}" formControlName="AccessoryName" #AccessoryName>
+    
+        <label><b>Description1 :</b></label>
+        <input type="text" name="Description1" value="{{ accessory.Description1 }}" formControlName="Description1" #Description1>
+    
+        <label><b>Description2 :</b></label>
+        <input type="text" name="Description2" value="{{ accessory.Description2 }}" formControlName="Description2" #Description2>
+        <label><b>Description3 :</b></label>
+        <input type="text" name="Description3" value="{{ accessory.Description3 }}" formControlName="Description3" #Description3>
+        <label><b>Description4 :</b></label>
+        <input type="text" name="Description4" value="{{ accessory.Description4 }}" formControlName="Description4" #Description4>
+        <label><b>Description5 :</b></label>
+        <input type="text" name="Description5" value="{{ accessory.Description5 }}" formControlName="Description5" #Description5>
+    
+        <label><b>Price :</b></label>
+        <input type="text"  value="{{ accessory.Price }}" name="price" formControlName="Price" #Price>
+        
+        <label><b>Shipping Time :</b></label>
+        <input type="text"  name="shippingtime"  value="{{ accessory.ShippingTime }}" formControlName="ShippingTime" #ShippingTime>
+        <hr>
+       
+        <button type="submit" class="btn btn-default updatebtn">EDIT</button>
+      </form>
+      </div>
+      

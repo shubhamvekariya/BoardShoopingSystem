@@ -1,0 +1,46 @@
+<app-admin-header></app-admin-header>
+<div style="padding-left:16px">
+    <h2></h2>
+    </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  
+  <br><div class="container">
+    <h2>PERSONAL DETAILS</h2><br>
+    
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>PaymentID</th>
+          <th>Email</th>
+          <th>First Name</th>
+          <th>Name On Card</th>
+          <th>Expiry Date</th>
+          <th>Board Id</th>
+          <th>No Of Item</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let detail of detaillist">
+          <td>{{ detail._id }}</td>
+          <td>{{ detail.Email }}</td>
+          <td>{{ detail.Fname }}</td>
+          <td>{{ detail.NameOnCard }}</td>
+          <td>{{ detail.EDate }}</td>
+          <td>{{ detail.Board_id }}</td>
+          <td>{{ detail.NoOfItem }}</td>
+        </tr>
+  
+      </tbody>
+    </table>
+  </div>
