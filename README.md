@@ -1,2 +1,3 @@
 # BoardShoopingSystem
  
+using angular,node,html,css,mongodb,javascript,jquery,etc....
